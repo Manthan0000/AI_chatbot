@@ -1,0 +1,218 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
+/* [project]/app/globals.css [app-client] (css) */
+:root {
+  --bg-dark: #05060b;
+  --bg-surface: #0f111ab3;
+  --bg-input: #1e203080;
+  --accent-primary: #814dff;
+  --accent-secondary: #00e5ff;
+  --accent-glow: #814dff66;
+  --gradient-accent: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  --gradient-surface: linear-gradient(180deg, #ffffff08 0%, #fff0 100%);
+  --text-primary: #fff;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --border-subtle: #ffffff14;
+  --border-bright: #ffffff26;
+  --glass-shadow: 0 12px 40px -10px #00000080;
+  --glow-shadow: 0 0 30px var(--accent-glow);
+  --sidebar-width: 280px;
+  --radius-lg: 16px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: var(--bg-dark);
+  width: 100%;
+  height: 100%;
+  color: var(--text-primary);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.app-layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.main-content {
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff1a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff3;
+}
+
+.glass {
+  background: var(--bg-surface);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass:before {
+  content: "";
+  background: var(--gradient-surface);
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 15px #814dff33;
+  }
+
+  50% {
+    box-shadow: 0 0 30px #814dff66;
+  }
+
+  100% {
+    box-shadow: 0 0 15px #814dff33;
+  }
+}
+
+.animate-float {
+  animation: 6s ease-in-out infinite float;
+}
+
+.btn-primary {
+  background: var(--gradient-accent);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: .75rem 1.5rem;
+  font-weight: 600;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0 4px 15px #814dff4d;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #814dff80;
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  color: #fff;
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  background: #ffffff0d;
+  border-radius: 12px;
+  padding: .75rem 1.5rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--border-bright);
+  background: #ffffff1a;
+}
+
+.auth-card {
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--glass-shadow) !important;
+  background: #0f111a !important;
+}
+
+.auth-header-title {
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+
+.auth-header-subtitle {
+  color: var(--text-secondary) !important;
+}
+
+.auth-social-button {
+  color: #fff !important;
+  background: #ffffff0d !important;
+  border: 1px solid #ffffff1a !important;
+  transition: all .2s !important;
+}
+
+.auth-social-button:hover {
+  background: #ffffff1a !important;
+}
+
+.auth-input {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border-subtle) !important;
+  color: #fff !important;
+}
+
+.auth-link {
+  color: var(--accent-primary) !important;
+  text-decoration: none !important;
+}
+
+.auth-link:hover {
+  color: var(--accent-secondary) !important;
+  text-decoration: underline !important;
+}
+
+.auth-label {
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+}
+
+.auth-divider-line {
+  background: #ffffff1a !important;
+}
+
+.auth-social-text {
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+/*# sourceMappingURL=%5Bproject%5D_app_globals_71f961d1.css.map*/

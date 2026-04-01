@@ -1,0 +1,65 @@
+{
+  "node": {
+    "00404a40094f5149c2b4ac44f9eb376cdaeb712f36": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/AI_CHATBOT/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "exportedName": "deleteKeylessAction",
+      "filename": "AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "00ad49340f4006a904239ced2c3181558cade6a150": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/AI_CHATBOT/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "exportedName": "createOrReadKeylessAction",
+      "filename": "AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "4009e7e42c4d65a7fc6f3a0b99b723dec2f023eeb0": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/AI_CHATBOT/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "exportedName": "syncKeylessConfigAction",
+      "filename": "AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "00ec4076dfc197624aad141622119ebdd9d9457cb3": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/AI_CHATBOT/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "exportedName": "invalidateCacheAction",
+      "filename": "AI_CHATBOT/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+    }
+  },
+  "edge": {}
+}
